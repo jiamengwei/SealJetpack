@@ -2,10 +2,10 @@
 // https://docs.swift.org/swift-book
 import OpenCC
 
-class SealJetParse {
+public class SealJetpack {
 
     // MARK: - 简体中文转繁体
-    static func toTraditional(simplified: String) -> String {
+    public static func toTraditional(simplified: String) -> String {
         let converter = try! ChineseConverter(options: [
             .traditionalize, .twStandard, .twIdiom,
         ])
